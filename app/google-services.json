@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "533024326734",
+    "firebase_url": "https://jolljack.firebaseio.com",
+    "project_id": "jolljack",
+    "storage_bucket": "jolljack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533024326734:android:b08677f69170a20dd1ef1f",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533024326734-5ksfgp57ac4mbfakaiepo3ou3phqu2jm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "67506dc937f53009db18fa47c573c7c92821d280"
+          }
+        },
+        {
+          "client_id": "533024326734-ohbto8f7bp155hbsgk8bkno8gl690qj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFdj_pyBn71KVc3MtNrDWRr9-kmZ3_P0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533024326734-ohbto8f7bp155hbsgk8bkno8gl690qj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

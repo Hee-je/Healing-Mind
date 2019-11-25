@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <translate
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="3000"
+
+        android:fromYDelta="90%"
+        android:toYDelta="870%"
+        android:fillAfter="false"
+        android:interpolator="@anim/linear_interpolator"
+        >
+    </translate>
+    <translate
+        android:duration="703"
+        android:fromXDelta="-320%"
+        android:toXDelta="320%"
+        android:fillAfter="false"
+        android:repeatCount="3"
+        android:repeatMode="reverse"
+        android:interpolator="@anim/cycle_5"
+        >
+
+
+    </translate>
+
+</set>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:text="한글 시지각 명상"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:foreground="?selectableItemBackground"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/caution"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:text="\u2754주의사항"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.example.myapplication.devadvance.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBar1"
+                android:layout_width="427dp"
+                android:layout_height="502dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                app:circle_stroke_width="20dp"
+                app:circle_x_radius="120dp"
+                app:circle_y_radius="120dp"
+                app:end_angle="270"
+                app:max="100"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#0174DF"
+                app:pointer_halo_color="#880174DF"
+                app:progress="0"
+                app:start_angle="270"
+                app:use_custom_radii="true"
+                tools:ignore="MissingConstraints" />
+
+            <com.example.myapplication.devadvance.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBar2"
+                android:layout_width="427dp"
+                android:layout_height="502dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                app:circle_stroke_width="20dp"
+                app:circle_x_radius="160dp"
+                app:circle_y_radius="160dp"
+                app:end_angle="270"
+                app:max="100"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#0174DF"
+                app:pointer_halo_color="#880174DF"
+                app:progress="0"
+                app:start_angle="270"
+                app:use_custom_radii="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <com.example.myapplication.devadvance.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBar3"
+                android:layout_width="427dp"
+                android:layout_height="502dp"
+                android:layout_centerInParent="true"
+                app:circle_stroke_width="20dp"
+                app:circle_x_radius="200dp"
+                app:circle_y_radius="200dp"
+                app:end_angle="270"
+                app:max="100"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#0174DF"
+                app:pointer_halo_color="#880174DF"
+                app:progress="2"
+                app:start_angle="270"
+                app:use_custom_radii="true"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ball"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ball" />
+
+            <TextView
+                android:id="@+id/letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#880174DF"
+                android:foreground="?selectableItemBackground"
+                android:textColor="#666666"
+                android:textSize="100dp" />
+
+            <VideoView
+                android:id="@+id/fullvideo"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <DatePicker
+                android:id="@+id/dpick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></DatePicker>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:max="100" />
+    </LinearLayout>
+</LinearLayout>

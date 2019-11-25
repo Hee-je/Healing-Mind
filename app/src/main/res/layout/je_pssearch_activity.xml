@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/ps_first"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/side_line"
+        android:hint="비밀번호 입력"
+        android:maxLength="20"
+        android:paddingLeft="20dp"
+        android:password="true"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/ps_second"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/side_line"
+        android:hint="비밀번호 확인"
+        android:maxLength="20"
+        android:paddingLeft="20dp"
+        android:password="true"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round"
+        android:foreground="?selectableItemBackground"
+        android:text="변경"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+</LinearLayout>

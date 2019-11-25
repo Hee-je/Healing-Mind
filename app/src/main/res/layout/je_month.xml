@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/Nodata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="명상을 하신 뒤 이용해주세요"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:background="@drawable/side_line2"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="1dp"
+                        android:paddingRight="1dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:text="5분"
+                            android:textSize="20dp"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:text="발성"
+                            android:textSize="20dp"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:text="시지각"
+                            android:textSize="20dp"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:text="그리기"
+                            android:textSize="20dp"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:text="소리"
+                            android:textSize="20dp"></TextView>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@drawable/side_line2"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingBottom="1dp">
+
+                        <TextView
+                            android:id="@+id/min5"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/voice"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/see"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/draw"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:textSize="15dp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sound"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/side_line2"
+                            android:gravity="center"
+                            android:textSize="15dp"></TextView>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

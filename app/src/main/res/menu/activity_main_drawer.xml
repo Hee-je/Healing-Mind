@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my"
+            android:title="내정보" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:title="알람" />
+
+
+        <item
+        android:id="@+id/nav_chart"
+        android:title="통계" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="로그아웃" />
+
+
+
+
+    </group>
+
+    <item android:title="For Application">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_notice"
+                android:icon="@android:drawable/ic_popup_reminder"
+                android:title="공지사항" />
+
+                <item
+                    android:id="@+id/nav_QnA"
+                    android:title="자주 묻는 질문" />
+                <item
+                    android:id="@+id/nav_del"
+                    android:title="회원 탈퇴" />
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:text="한글 발성 명상"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:foreground="?selectableItemBackground"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/caution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="\u275주의사항"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/voice_image" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_step1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 1"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/title_step2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 2"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 2"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/title_step3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 3"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 3"
+                android:text="왼손 엄지손가락으로 턱 아래 혀 밑부분을 누르고 발성 후 호흡 유도기로 공기를 들이마신 뒤 입을 다물고 코로 숨을 내쉰다."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/title_step4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 4"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 4"
+                android:text="오른손 엄지손가락으로 턱 아래 혀 밑부분을 누르고 발성 후 호흡 유도기로 공기를 들이마신 뒤 입을 다물고 코로 숨을 내쉰다."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/title_step5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 5"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 5"
+                android:text="힘의 중심을 혀 가운데 두고 발성 후 호흡 유도기로 공기를 들이마신 뒤 입을 다물고 코로 숨을 내쉰다."
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/title_step6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="STEP 6"
+                android:textColor="#43974B"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/step6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:imeActionLabel="STEP 6"
+                android:text="힘의 중심을 혀에 두고 발성 후 호흡 유도기로 공기를 들이마신 뒤 입을 다물고 코로 숨을 내쉰다."
+                android:textSize="20dp" />
+
+            <VideoView
+                android:id="@+id/fullvideo"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp" />
+
+            <DatePicker
+                android:id="@+id/dpick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></DatePicker>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:max="600" />
+    </LinearLayout>
+</LinearLayout>
